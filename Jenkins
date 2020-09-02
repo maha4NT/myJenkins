@@ -1,13 +1,13 @@
 node{
     
     
-    stage('i want to clone java code') {
+    stage('clone java code') {
     git 'https://github.com/maha4NT/mahalogin.git'
     } 
     
     
     
-    stage('i want exectute maven target') {
+    stage('maven target') {
      sh label: '', script: 'mvn clean install'
     } 
     
